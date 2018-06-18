@@ -24,9 +24,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0xCEEB
 #define PRODUCT_ID      0x1256
 #define DEVICE_VER      0x0200
-#define MANUFACTURER    Keebio
-#define PRODUCT         Iris Keyboard
-#define DESCRIPTION     Split 50 percent ergonomic keyboard
+#define MANUFACTURER    Gary Russell
+#define PRODUCT         Origami Keyboard
+#define DESCRIPTION     Split ergo 40 percent for cheapskates
 
 /* key matrix size */
 // Rows are doubled-up
@@ -34,7 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COLS 6
 
 // wiring of each half
-#define MATRIX_ROW_PINS { D7, E6, B4, D2, D4 }
+#define MATRIX_ROW_PINS { D7, E6, B4, D2 }
 #define MATRIX_COL_PINS { F6, F7, B1, B3, B2, B6 }
 
 /* COL2ROW or ROW2COL */
