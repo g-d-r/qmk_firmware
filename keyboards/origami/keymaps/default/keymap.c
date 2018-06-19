@@ -39,17 +39,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      TAB , Q  , W  , F  , P  , B  ,                J  , L  , U  , Y  ,SCLN,DEL ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     LOWR, A  , R  , S  , T  , G  ,                K  , N  , E  , I  , O  ,BSPC,
+     LT(LOWR,BSPC), A  , R  , S  , T  , G  ,       K  , N  , E  , I  , O  ,QUOT,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      RASE, Z  , X  , C  , D  , V  ,                M  , H  ,COMM,DOT ,SLSH,RALT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                       LGUI, SPC ,                 RCTL,RSFT
+                       LGUI, SPC ,               SFTENT,RCTL
   //                  `----+----+----'        `----+----+----'
   ),
 
   [_LOWER] = LAYOUT_kc(
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-       CAPS ,INS ,    ,RBRC,BSLS,    ,                   ,RPRN, UP ,PSCR,PGUP,HOME,
+       CAPS ,INS ,BSLS,RBRC,HASH, AT ,                   ,RPRN, UP ,PSCR,PGUP,HOME,
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
        LOWR,DEL ,    ,LBRC, LCTL,COLN,               LPRN,LEFT,DOWN,RGHT,PGDN,END ,
     //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
