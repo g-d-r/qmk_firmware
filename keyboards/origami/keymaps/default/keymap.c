@@ -52,19 +52,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc(
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-       CAPS ,INS ,BSLS,RBRC,HASH, AT ,               RPRN,PGUP, UP ,PSCR,PGDN,HOME,
+       CAPS ,INS ,BSLS,RBRC,HASH, AT ,               RPRN,PGUP, UP ,PGDN,PSCR,HOME,
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
        LOBS,DEL ,    ,LBRC, LCTL,COLN,               LPRN,LEFT,DOWN,RGHT,BSPC,END ,
     //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
        F1  , F2 , F3  , F4 , F5 , F6 ,                F7 , F8 , F9 ,F10 ,F11 ,F12 ,
     //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                        UNDS, ENT ,                 ENT ,    
+                        UNDS, ENT ,                 MEH ,HYPR
     //                  `----+----+----'        `----+----+----'
     ),
 
   [_RAISE] = LAYOUT_kc(
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-       ESC ,GRV ,CRSEL,EXSEL,ALT_ERASE,    ,               VOLU, 7  , 8  , 9  ,MPRV,MNXT,
+       ESC ,GRV ,CRSEL,EXSEL,ALT_ERASE,    ,       VOLU, 7  , 8  , 9  ,MPRV,MNXT,
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
        ADJ,PPLS,PMNS,PAST,PSLS,PEQL,               VOLD,  4 , 5  , 6  ,MPLY,MSTP,
     //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
