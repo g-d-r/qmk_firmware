@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc(
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-       CAPS ,INS ,BSLS,RBRC,HASH, AT ,               PGUP,RPRN, UP ,PSCR,PGDN,HOME,
+       CAPS ,INS ,BSLS,RBRC,HASH, AT ,               RPRN,PGUP, UP ,PSCR,PGDN,HOME,
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
        LOBS,DEL ,    ,LBRC, LCTL,COLN,               LPRN,LEFT,DOWN,RGHT,BSPC,END ,
     //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_kc(
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-       ESC ,    ,    ,    ,    ,    ,               VOLU, 7  , 8  , 9  ,MPRV,MNXT,
+       ESC ,GRV ,CRSEL,EXSEL,ALT_ERASE,    ,               VOLU, 7  , 8  , 9  ,MPRV,MNXT,
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
        ADJ,PPLS,PMNS,PAST,PSLS,PEQL,               VOLD,  4 , 5  , 6  ,MPLY,MSTP,
     //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
