@@ -21,7 +21,10 @@ enum custom_keycodes {
 
 #define KC_LOWR LOWER
 #define KC_RASE RAISE
+#define KC_ADJ ADJUST
 #define KC_RST RESET
+#define KC_LOBS LT(LOWER,KC_BSPC)
+#define KC_RASC LT(RAISE,KC_ESC)
 #define KC_BL_S BL_STEP
 #define KC_DBUG DEBUG
 #define KC_RTOG RGB_TOG
@@ -39,9 +42,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      TAB , Q  , W  , F  , P  , B  ,                J  , L  , U  , Y  ,SCLN,DEL ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     LT(LOWR,BSPC), A  , R  , S  , T  , G  ,       K  , N  , E  , I  , O  ,QUOT,
+     LOBS, A  , R  , S  , T  , G  ,                K  , N  , E  , I  , O  ,QUOT,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     RASE, Z  , X  , C  , D  , V  ,                M  , H  ,COMM,DOT ,SLSH,RALT,
+     RASC, Z  , X  , C  , D  , V  ,                M  , H  ,COMM,DOT ,SLSH,RALT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
                        LGUI, SPC ,               SFTENT,RCTL
   //                  `----+----+----'        `----+----+----'
@@ -49,9 +52,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc(
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-       CAPS ,INS ,BSLS,RBRC,HASH, AT ,                   ,RPRN, UP ,PSCR,PGUP,HOME,
+       CAPS ,INS ,BSLS,RBRC,HASH, AT ,               PGUP,RPRN, UP ,PSCR,PGDN,HOME,
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-       LOWR,DEL ,    ,LBRC, LCTL,COLN,               LPRN,LEFT,DOWN,RGHT,PGDN,END ,
+       LOBS,DEL ,    ,LBRC, LCTL,COLN,               LPRN,LEFT,DOWN,RGHT,BSPC,END ,
     //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
        F1  , F2 , F3  , F4 , F5 , F6 ,                F7 , F8 , F9 ,F10 ,F11 ,F12 ,
     //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
@@ -63,9 +66,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
        ESC ,    ,    ,    ,    ,    ,               VOLU, 7  , 8  , 9  ,MPRV,MNXT,
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-       LOWR,PPLS,PMNS,PAST,PSLS,PEQL,               VOLD,  4 , 5  , 6  ,MPLY,MSTP,
+       ADJ,PPLS,PMNS,PAST,PSLS,PEQL,               VOLD,  4 , 5  , 6  ,MPLY,MSTP,
     //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-       RASE,UNDO,CUT,COPY,PASTE,    ,               MUTE,  1 , 2  , 3  ,    ,    ,
+       RASC,UNDO,CUT,COPY,PASTE,    ,               MUTE,  1 , 2  , 3  ,    ,    ,
     //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
                              , ENT ,                   0,PDOT  
     //                  `----+----+----'        `----+----+----'
@@ -75,9 +78,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      TAB , Q  , W  , F  , P  , B  ,                J  , L  , U  , Y  ,SCLN,DEL ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     LOWR, A  , R  , S  , T  , G  ,                K  , N  , E  , I  , O  ,BSPC,
+     ADJ, A  , R  , S  , T  , G  ,                K  , N  , E  , I  , O  ,BSPC,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     RASE, Z  , X  , C  , D  , V  ,                M  , H  ,COMM,DOT ,SLSH, ENT,
+     RASC, Z  , X  , C  , D  , V  ,                M  , H  ,COMM,DOT ,SLSH, ENT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
                        LGUI, SPC ,                 RASE,LALT
   //                  `----+----+----'        `----+----+----'
