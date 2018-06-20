@@ -23,8 +23,8 @@ enum custom_keycodes {
 #define KC_RASE RAISE
 #define KC_ADJ ADJUST
 #define KC_RST RESET
-#define KC_LOBS LT(LOWER,KC_BSPC)
-#define KC_RASC LT(RAISE,KC_ESC)
+#define KC_LOBS LT(_LOWER,KC_BSPC)
+#define KC_RASC LT(_RAISE,KC_ESC)
 #define KC_BL_S BL_STEP
 #define KC_DBUG DEBUG
 #define KC_RTOG RGB_TOG
