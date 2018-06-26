@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT_kc(
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     TAB , Q  , W  , F  , P  , B  ,                J  , L  , U  , Y  ,SCLN,DEL ,
+     TAB , Q  , W  , F  , P  , B  ,                J  , L  , U  , Y  ,NUHS,DEL ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      LOBS, A  , R  , S  , T  , G  ,                K  , N  , E  , I  , O  ,QUOT,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
@@ -52,13 +52,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc(
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-       CAPS ,INS ,BSLS,RBRC,HASH, AT ,               RPRN,PGUP, UP ,PGDN,PSCR,HOME,
+       CAPS ,INS ,NUBS,RBRC,NUHS,DQUO,               RPRN,PGUP, UP ,PGDN,PSCR,HOME,
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-       LOBS,DEL ,    ,LBRC, LCTL,COLN,               LPRN,LEFT,DOWN,RGHT,BSPC,END ,
+       LOBS,DEL ,SCLN,LBRC, LCTL,COLN,               LPRN,LEFT,DOWN,RGHT,BSPC,END ,
     //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
        F1  , F2 , F3  , F4 , F5 , F6 ,                F7 , F8 , F9 ,F10 ,F11 ,F12 ,
     //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                        UNDS, ENT ,                 MEH ,HYPR
+                        UNDS,SFTENT,                 RCTL,RALT
     //                  `----+----+----'        `----+----+----'
     ),
 
@@ -66,23 +66,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
        ESC ,GRV ,CRSEL,EXSEL,ALT_ERASE,    ,       VOLU, 7  , 8  , 9  ,MPRV,MNXT,
     //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-       ADJ,PPLS,PMNS,PAST,PSLS,PEQL,               VOLD,  4 , 5  , 6  ,MPLY,MSTP,
+       ADJ,PPLS,PMNS,PAST,PSLS, EQL,               VOLD,  4 , 5  , 6  ,MPLY,MSTP,
     //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-       RASC,UNDO,CUT,COPY,PASTE,    ,               MUTE,  1 , 2  , 3  ,    ,    ,
+       RASC,UNDO,CUT,COPY,PASTE,MENU,               MUTE,  1 , 2  , 3  ,RCTL,RALT,
     //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                             , ENT ,                   0,PDOT  
+                             ,SFTENT,                   0,PDOT  
     //                  `----+----+----'        `----+----+----'
     ),
 
   [_ADJUST] = LAYOUT_kc(
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     TAB , Q  , W  , F  , P  , B  ,                J  , L  , U  , Y  ,SCLN,DEL ,
+     RST ,    ,    ,    ,    ,    ,                   , P7 , P8 , P9 ,    ,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     ADJ, A  , R  , S  , T  , G  ,                K  , N  , E  , I  , O  ,BSPC,
+     ADJ,    ,    ,    ,    ,    ,                   , P4 , P5 , P6 ,    ,    ,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     RASC, Z  , X  , C  , D  , V  ,                M  , H  ,COMM,DOT ,SLSH, ENT,
+     RASC,    ,    ,    ,    ,    ,                   , P1 , P2 , P3 ,    ,    ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                       LGUI, SPC ,                 RASE,LALT
+                           ,     ,                 LCTL,LGUI
   //                  `----+----+----'        `----+----+----'
   )
 
